@@ -21,30 +21,31 @@ function displayCart() {
 
     const cartItem = document.createElement("div");
     cartItem.classList.add("cart-item");
-   cartItem.innerHTML = `
-  <div class="cart-item row">
-    <div class="col-md-2">
-      <img src="${item.image}" class="img-fluid" alt=""> 
+  cartItem.innerHTML = `
+  <div class="cart-item row text-center text-md-start">
+    <div class="col-12 col-md-2 mb-2 mb-md-0">
+      <img src="${item.image}" class="img-fluid rounded" alt=""> 
     </div>
-    <div class="col-md-4 d-flex align-items-center">
+    <div class="col-12 col-md-4 d-flex align-items-center justify-content-center justify-content-md-start">
       <p class="mb-0 fw-bold">${item.title}</p>
     </div>
-    <div class="col-md-2 d-flex align-items-center">
+    <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
       <span class="price">$${item.price}</span>
     </div>
-    <div class="col-md-2 d-flex align-items-center">
-      <input type="number" class="form-control w-50" value="${item.quantity}" min="1" data-index="${index}">
+    <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
+      <input type="number" class="form-control form-control-sm quantity-input" value="${item.quantity}" min="1" data-index="${index}">
     </div>
-    <div class="col-md-1 d-flex align-items-center">
+    <div class="col-6 col-md-1 d-flex align-items-center justify-content-center mt-2 mt-md-0">
       <span class="total-price">$${itemTotal.toFixed(2)}</span>
     </div>
-    <div class="col-md-1 d-flex align-items-center">
+    <div class="col-6 col-md-1 d-flex align-items-center justify-content-center mt-2 mt-md-0">
       <button class="remove btn btn-outline-danger btn-sm" data-index="${index}">
         <i class="bi bi-x"></i>
       </button>
     </div>
   </div>
 `;
+
 
     cartItemsContainer.appendChild(cartItem);
   });
@@ -74,9 +75,8 @@ function removeCartItem() {
 }
 
 
-
 function updateCartQuantity() {
-  document.querySelectorAll(".quantity input").forEach((input) => {
+  document.querySelectorAll(".quantity-input").forEach((input) => {
     input.addEventListener("change", function () {
       let cart = JSON.parse(localStorage.getItem("cart")) || [];
       const index = this.getAttribute("data-index");

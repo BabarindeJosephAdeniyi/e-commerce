@@ -23,7 +23,7 @@ function displayProductDetail() {
     return;
   }
 
-  productImageE1.innerHTML = `<img src="${productDetail.image}" loading="lazy"  data-aos="fade-up" alt="${productDetail.title}" width="50%" class="img-fluid">`;
+  productImageE1.innerHTML = `<img src="${productDetail.image}" loading="lazy"  data-aos="fade-up" alt="${productDetail.title}"  class="img-fluid">`;
   titleE1.textContent = productDetail.title;
   priceE1.textContent = `Price: $${productDetail.price}`;
   descriptionE1.textContent = productDetail.description.substr(0, 300) + '...';
