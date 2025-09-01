@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summer Sale</title>
+  
+  
+  
+  
+  
+   <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    /><style>
+
+
+    .hero-section {
+      position: relative;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url('images/hero_2.jpg') no-repeat center center/cover;
+      min-height: 100vh;
+    }
+    .countdown-card {
+      min-width: 80px;
+    }
+  </style>
+</head>
+<body>
+
+
+   <!-- top info bar -->
+    <nav class="navbar bg-body-tertiary">
+      <div
+        class="container d-flex justify-content-between align-items-center py-3"
+      >
+        <div>
+          <a class="navbar-brand" href="#"
+            ><i class="bi bi-facebook icons"></i
+          ></a>
+          <a class="navbar-brand" href="#"
+            ><i class="bi bi-twitter-x icons"></i
+          ></a>
+          <a class="navbar-brand" href="#"
+            ><i class="bi bi-instagram icons"></i
+          ></a>
+          <a class="navbar-brand" href="#"
+            ><i class="bi bi-linkedin icons"></i
+          ></a>
+        </div>
+        <div class="d-none d-md-flex gap-4 flex-wrap">
+          <a href="#" class="text-decoration-none text-dark">
+            <i class="bi bi-telephone me-2"></i>
+            <span class="fw-bold">(+1) 234 5678 9101</span>
+          </a>
+          <a href="#" class="text-decoration-none text-dark">
+            <i class="bi bi-envelope me-2"></i>
+            <span class="fw-bold">shop@yourdomain.com</span>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- main nav bar -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top top-0">
+      <div class="container">
+        <h1 class="navbar-brand logo fs-3 fs-md-1">
+          Selling<i class="text-danger">.</i>
+        </h1>
+
+
+
+
+        
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+       <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="homepage.html" class="nav-link px-4">Home</a></li>
+          <li class="nav-item">
+            <a href="product.html" class="nav-link px-4">Product</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link px-4">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-4">Special</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link px-4">Testimonials</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link px-4">Blog</a></li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link px-4">Contact</a>
+          </li>
+          <li class="nav-item">
+  <a href="cart.html" class="nav-link px-4">
+    <i class="bi bi-cart4"></i>
+    <span id="cart-badge" class="badge bg-danger">0</span>
+  </a>
+</li>
+
+        </ul>
+    </div>
+       
+      </div>
+    </nav>
+
+  <section class="hero-section d-flex align-items-center text-white text-center">
+    <div class="container">
+      <p class="text-uppercase">Special Promo</p>
+      <h1 class="fw-bold display-4">Summer Sale</h1>
+      <p class="mb-4">Repudiandae nostrum natus excepturi fuga ullam accusantium vel ut eveniet aut consequatur laboriosam ipsam.</p>
+
+      <!-- Countdown using Bootstrap cards -->
+      <div class="row justify-content-center mb-4 g-3">
+        <div class="col-auto">
+          <div class="card countdown-card shadow-sm">
+            <div class="card-body p-3 text-success">
+              <h2 id="weeks" class="mb-0 fw-bold">00</h2>
+              <small class="text-muted">weeks</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto">
+          <div class="card countdown-card shadow-sm">
+            <div class="card-body p-3 text-success">
+              <h2 id="days" class="mb-0 fw-bold">00</h2>
+              <small class="text-muted">days</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-auto"></div>
+
+
+        <!-- footer -->
+
+        
+            <footer class="bg-light text-dark  pt-5 ">
+    <div class="container ">
+      <div class="row ">
+
+
+        <div class="col-md-3 mb-4 lh-lg">
+          <h6 class="fw-bold">ABOUT US</h6>
+          <p class="text-muted">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Neque facere laudantium magnam voluptatum autem. 
+            Amet aliquid nesciunt veritatis aliquam.
+          </p>
+        </div>
+
+
+        <div class="col-md-3 mb-4 lh-lg">
+          <h6 class="fw-bold">QUICK LINKS</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-decoration-none text-muted">About Us</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Services</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Testimonials</a></li>
+            <li><a href="#" class="text-decoration-none text-muted">Contact Us</a></li>
+          </ul>
+        </div>
+
+ 
+        <div class="col-md-3 mb-4 lh-lg">
+          <h6 class="fw-bold">FOLLOW US</h6>
+          <div class="d-flex gap-3">
+            <a href="#" class="text-muted"><i class="bi bi-facebook fs-5"></i></a>
+            <a href="#" class="text-muted"><i class="bi bi-twitter fs-5"></i></a>
+            <a href="#" class="text-muted"><i class="bi bi-instagram fs-5"></i></a>
+            <a href="#" class="text-muted"><i class="bi bi-linkedin fs-5"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-4 text-start lh-lg">
+          <h6 class="fw-bold">FEATURED PRODUCT</h6>
+          <img src="https://cityclassify.com/Api/media/uploads/original/1754979375328717176.jpg" width="500%" class="img-fluid mb-2" alt="Leather Brown Shoe">
+          <p class="fs-5 pe-5 py-3 mb-0">Leather Brown Shoe</p>
+          <p class="fw-bold">$60.00</p>
+          <button class="btn btn-dark rounded-0 bg-dark fw-bold py-1 px-3 btn-sm">ADD TO CART</button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="text-center  mt-5 py-5 ">
+      <p class="mb-0 text-muted">
+        Copyright ©2025 All rights reserved | This template is made with 
+        <i class="bi bi-heart-fill "></i> by Colorlib
+      </p>
+    </div>
+  </footer>
