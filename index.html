@@ -35,7 +35,7 @@
   </head>
   <body>
     <!-- top info bar -->
-    <nav class="navbar bg-body-tertiary">
+    <nav class="navbar bg-body-tertiary d-none d-md-flex gap-4 flex-wrap">
       <div
         class="container d-flex justify-content-between align-items-center py-3"
       >
@@ -148,7 +148,7 @@
           <div class="carousel-inner">
             <div class="carousel-item active text-center">
               <div class="p-4 mx-auto" style="max-width: 700px">
-                <p class="fst-italic fs-5">
+                <p class="fst-italic fs-5 fast">
                   "Amazing products and fast delivery! Highly recommend."
                 </p>
                 <h6 class="fw-bold mt-3">– Sarah Johnson</h6>
@@ -157,7 +157,7 @@
 
             <div class="carousel-item text-center">
               <div class="p-4 mx-auto" style="max-width: 700px">
-                <p class="fst-italic fs-5">
+                <p class="fst-italic fs-5 fast">
                   "Great quality and excellent customer support."
                 </p>
                 <h6 class="fw-bold mt-3">– David Lee</h6>
@@ -166,7 +166,7 @@
 
             <div class="carousel-item text-center">
               <div class="p-4 mx-auto" style="max-width: 700px">
-                <p class="fst-italic fs-5">
+                <p class="fst-italic fs-5 fast">
                   "I shop here all the time, never disappointed!"
                 </p>
                 <h6 class="fw-bold mt-3">– Amanda Smith</h6>
@@ -194,7 +194,7 @@
             data-bs-slide="next"
           >
             <span
-              class="carousel-control-next-icon bg-dark rounded-circle p-4"
+              class="carousel-control-next-icon bg-dark rounded-circle p-4 prev"
               aria-hidden="true"
             ></span>
             <span class="visually-hidden">Next</span>
@@ -348,16 +348,16 @@
 
     <!-- SECTION3 -->
 
-    <section data-aos="fade-up-right"
-     data-aos-easing="linear"
-     data-aos-duration="1000" class="py-5 bg-white blog-section">
+    <section class="py-5 bg-white blog-section">
       <div class="container">
         <h2 class="section-title text-center fw-bold mb-5">
           Latest From Our Blog
         </h2>
         <div data-aos="" class="row g-4">
           <div class="col-md-6 col-lg-4">
-            <div class="card shadow-sm border-0 h-100">
+            <div data-aos="fade-up-right"
+     data-aos-easing="linear"
+     data-aos-duration="1000" class="card shadow-sm border-0 h-100">
               <img
                 src="https://www.urbanebox.com/wp-content/uploads/2014/07/summer-fashion-tips.jpeg" loading="lazy"
                 class="img-fluid card-img-top"
@@ -374,7 +374,7 @@
           </div>
 
           <div class="col-md-6 col-lg-4">
-            <div class="card shadow-sm border-0 h-100">
+            <div data-aos="fade-down-left" class="card shadow-sm border-0 h-100">
               <img
                 src="https://comproved.com/wp-content/uploads/2024/09/openingsbeeld-blogartikel-10.png"
                 class="img-fluid card-img-top"
@@ -391,7 +391,7 @@
           </div>
 
           <div class="col-md-6 col-lg-4">
-            <div class="card shadow-sm border-0 h-100">
+            <div data-aos="flip-up" class="card shadow-sm border-0 h-100">
               <img
                 src="https://media.istockphoto.com/id/1423343445/photo/close-up-of-steadicam-screens-with-female-model-using-laptop-by-table.jpg?s=612x612&w=0&k=20&c=69saQLDFn2-tEV7m9a6RukD1rCHwjffYadXrycwNnbA="
                 class="img-fluid card-img-top"
@@ -408,7 +408,7 @@
           </div>
 
           <div class="col-md-6 col-lg-4">
-            <div class="card shadow-sm border-0 h-100">
+            <div data-aos="zoom-in-up" class="card shadow-sm border-0 h-100">
               <img
                 src="https://www.lauderhillmall.net/images/2025/1/shopping_smarter.jpeg"
                 class="img-fluid card-img-top"
@@ -426,7 +426,7 @@
           </div>
 
           <div class="col-md-6 col-lg-4">
-            <div class="card shadow-sm border-0 h-100">
+            <div data-aos="zoom-in-right" class="card shadow-sm border-0 h-100">
               <img
                 src="https://static.fibre2fashion.com//articleresources/images/91/9076/FashionTrends2021_Small.jpg"
                 class="img-fluid card-img-top"
@@ -444,7 +444,7 @@
           </div>
 
           <div class="col-md-6 col-lg-4">
-            <div class="card shadow-sm border-0 h-100">
+            <div data-aos="zoom-in-left" class="card shadow-sm border-0 h-100">
               <img
                 src="https://www.mckendree.edu/offices/marketing/blog/get-involved.jpeg"
                 class="img-fluid card-img-top"
@@ -467,7 +467,7 @@
     <!-- OUR SERVICES -->
 
     <section class="py-5">
-      <div class="container">
+      <div data-aos="zoom-out" class="container">
         <p class="text-center fw-bold" style="color: #777">OUR SERVICES</p>
         <h2 class="text-center fw-bold mb-5">We Offer Services</h2>
         <div class="row g-4">

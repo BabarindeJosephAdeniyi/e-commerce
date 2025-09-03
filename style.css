@@ -23,6 +23,7 @@
 
 }
 
+
 .icons {
   font-size: 30px;
   color: black;
@@ -35,14 +36,50 @@
 .sectiontwo {
   background: linear-gradient(#00000099,rgba(0, 0, 0, 0.6)),url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d") center/cover no-repeat;
   color: white;
-   min-height: 100svh;         
-  padding-block: 6rem 10rem;    
+  padding-bottom: 6rem 10rem;    
   margin-bottom: 4rem;  
 }
 
 .section-title {
   margin: 2rem 0 2.5rem;        
   letter-spacing: .03em;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .section0ne {
+    height: 100vh;
+    text-align: center; 
+    padding: 0 20px; 
+  }
+  
+
+  .sectiontwo {
+    text-align: center;
+    width: 100%;
+    padding: 0 10%;
+  }
+
+  .fast {
+    padding: 0 10%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .product-image {
+    width: 10%;
+  }
+
+  .product-card {
+    width: 100%;
+  }
+  .shop {
+    margin: 40px auto; 
+  }
+  .club {
+    margin: 0 auto; 
+  }
 }
 
     .icon-box {
