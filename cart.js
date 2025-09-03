@@ -24,10 +24,10 @@ function displayCart() {
   cartItem.innerHTML = `
   <div class="cart-item row text-center text-md-start">
     <div class="col-12 col-md-2 mb-2 mb-md-0">
-      <img src="${item.image}" class="img-fluid rounded" alt=""> 
+      <img src="${item.image}" width="50%" class="img-fluid rounded" alt=""> 
     </div>
     <div class="col-12 col-md-4 d-flex align-items-center justify-content-center justify-content-md-start">
-      <p class="mb-0 fw-bold">${item.title}</p>
+      <p class="mb-0 fw-bold">${item.title.substr(0,25) + "..."}</p>
     </div>
     <div class="col-6 col-md-2 d-flex align-items-center justify-content-center">
       <span class="price">$${item.price}</span>
